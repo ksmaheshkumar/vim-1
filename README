@@ -2,3 +2,5 @@ Personal vim scripts and settings
 
 2011-11-15	Initial commit 
 	Snipmate, Surround, styling for Jade, CoffeeScript, Stylus and custom settings for PHP and JS
+2011-11-15
+	Updated vim-coffeescript, changed vim-jade source
