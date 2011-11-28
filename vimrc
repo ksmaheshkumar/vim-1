@@ -101,3 +101,7 @@ au FileType * setlocal comments=
 
 " Pathogen
 call pathogen#infect() 
+
+" Folding
+"let php_folding=0
+let g:DisableAutoPHPFolding = 1
