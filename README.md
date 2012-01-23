@@ -17,7 +17,7 @@ jazz that I didn't want mucking up my vimrc.
 Usage
 ===
 
-Clone the repo and symlink vimrc to ~/.vimrc and you'll see what I see.
+Clone the repo to ~/.vim and symlink ~/.vim/vimrc to ~/.vimrc and you'll see what I see.
 
 
 Changelog
