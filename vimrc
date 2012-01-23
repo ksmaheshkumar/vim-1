@@ -114,10 +114,6 @@ call pathogen#infect()
 " enable plugins
 filetype plugin indent on
 
-" vim-coffee-sript settings
-vmap <leader>c <esc>:'<,'>:CoffeeCompile<CR>
-map <leader>c :CoffeeCompile<CR>
-
 " Folding
 "let php_folding=0
 let g:DisableAutoPHPFolding = 1
