@@ -1,2 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/d33t/.devilspie'
+let g:netrw_dirhist_2='/media/MacBack/System/www/xmas-node/routes'
+let g:netrw_dirhist_3='/media/MacBack/System/www/wishlist/runOnce'
+let g:netrw_dirhist_4='/media/MacBack/System/www/select_italy/newsite/browse/packages'
+let g:netrw_dirhist_5='/home/d33t/.subversion'
+let g:netrw_dirhist_6='/media/MacBack/System/www/node-landing/modules'

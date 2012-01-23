@@ -8,7 +8,7 @@
 
 " This line should not be removed as it ensures that various options are
 " properly set to work with the Vim-related packages available in Debian.
-runtime! debian.vim
+" runtime! debian.vim
 
 " Uncomment the next line to make Vim more Vi-compatible
 " NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
@@ -17,7 +17,7 @@ runtime! debian.vim
 
 " Vim5 and later versions support syntax highlighting. Uncommenting the next
 " line enables syntax highlighting by default.
-syntax on
+syntax enable
 
 " Some custom highlighting rules
 " au BufNewFile,BufRead *.ctp setfiletype php
@@ -25,6 +25,15 @@ syntax on
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
 set background=dark
+
+" The following are commands that change the default colors of the syntax
+" highlighting. Comment of change them to meet your needs
+hi Comment ctermfg=DarkGreen
+hi Search ctermbg=red
+hi String ctermfg=grey
+
+" Load the solarized color theme
+"colorscheme solarized
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
@@ -56,7 +65,7 @@ set hlsearch		" Highlight search phrases
 "set mouse=a		" Enable mouse usage (all modes) in terminals
 set visualbell		" Enable visual bell
 set ruler		" Always show a ruler
-set laststatus=2	" Always shows the last staus menu
+set laststatus=2	" Always shows the last status menu
 set noerrorbells	" Don't ring the bell for errors
 set nostartofline	" Don't move cursor to the start of the line
 set shortmess=at	" Avoid the 'press enter' with error messages
@@ -66,12 +75,13 @@ set tabstop=4		" use X spaces when tab is pressed
 set shiftwidth=4  	" shifttabs are also X spaces
 set smarttab		" make delete remove X spaces
 
+" Syntastic settings
+let g:syntastic_check_on_open=1
+" Status line settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
-" The following are commands that change the default colors of the syntax
-" highlighting. Comment of change them to meet your needs
-hi Comment ctermfg=DarkGreen
-hi Search ctermbg=red
-hi String ctermfg=grey
 
 " On some systems, it may be nesseccary to re-map the arrow keys. Uncomment
 " these next lines if that is the case.
