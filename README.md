@@ -23,6 +23,8 @@ Clone the repo to ~/.vim and symlink ~/.vim/vimrc to ~/.vimrc and you'll see wha
 Changelog
 ---
 
+- 2012-01-24
+	+ Set up a simple statusline, fixing settings from when syntastic was added
 - 2012-01-23
     + Added syntastic
     + Added plugin and indent loading in vimrc

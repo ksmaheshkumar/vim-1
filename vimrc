@@ -54,18 +54,19 @@ nnoremap <F8> :setl noai! nocin! nosi!
 
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
-set showcmd		" Show (partial) command in status line.
+set showcmd			" Show (partial) command in status line.
 set showmatch		" Show matching brackets.
 set ignorecase		" Do case insensitive matching
 set smartcase		" Do smart case matching
 set incsearch		" Incremental search as you type it
 set hlsearch		" Highlight search phrases
 "set autowrite		" Automatically save before commands like :next and :make
-"set hidden             " Hide buffers when they are abandoned
+"set hidden			" Hide buffers when they are abandoned
 "set mouse=a		" Enable mouse usage (all modes) in terminals
 set visualbell		" Enable visual bell
-set ruler		" Always show a ruler
+set ruler			" Always show a ruler
 set laststatus=2	" Always shows the last status menu
+set statusline=%F%m%r%h%w\ (%{&ff})\ %=\ [%l,%v\ %L\ (%p%%)]
 set noerrorbells	" Don't ring the bell for errors
 set nostartofline	" Don't move cursor to the start of the line
 set shortmess=at	" Avoid the 'press enter' with error messages
