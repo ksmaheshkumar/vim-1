@@ -45,9 +45,9 @@ hi String ctermfg=grey
 " Uncomment the following to have Vim load indentation rules according to the
 " detected filetype. Per default Debian Vim only load filetype specific
 " plugins.
-if has("autocmd")
-  filetype indent on
-endif
+"if has("autocmd")
+"  filetype indent on
+"endif
 
 " Allow indenting to be toggled by pressing F8
 nnoremap <F8> :setl noai! nocin! nosi!
