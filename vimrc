@@ -113,7 +113,3 @@ au FileType * setlocal comments=
 call pathogen#infect() 
 " enable plugins
 filetype plugin indent on
-
-" Folding
-"let php_folding=0
-let g:DisableAutoPHPFolding = 1
