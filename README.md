@@ -23,11 +23,11 @@ Clone the repo to ~/.vim and symlink ~/.vim/vimrc to ~/.vimrc and you'll see wha
 Changelog
 ---
 
-- 2012-01-23
+- 2012-01-24
 	+ Fixed syntastic and vim-colors-solarized; didn't remove .git files before
-- 2012-01-22
+- 2012-01-23
 	+ Set up a simple statusline, fixing settings from when syntastic was added
-- 2012-01-21
+- 2012-01-22
     + Added syntastic
     + Added plugin and indent loading in vimrc
     + Added aliases for CoffeeMake and CoffeeCompile ([thanks @esamatti](http://esa-matti.suuronen.org/blog/2011/11/28/how-to-write-coffeescript-efficiently/))
