@@ -113,4 +113,4 @@ au FileType * setlocal comments=
 " Pathogen
 call pathogen#infect() 
 " enable plugins
-filetype plugin indent on
+filetype plugin on
