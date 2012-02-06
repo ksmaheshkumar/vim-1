@@ -19,6 +19,11 @@
 " line enables syntax highlighting by default.
 syntax enable
 
+" Start Pathogen
+call pathogen#infect() 
+" Enable filetype plugins
+filetype plugin on
+
 " Some custom highlighting rules
 " au BufNewFile,BufRead *.ctp setfiletype php
 
@@ -75,6 +80,7 @@ set shortmess=at	" Avoid the 'press enter' with error messages
 set tabstop=4		" use X spaces when tab is pressed
 set shiftwidth=4  	" shifttabs are also X spaces
 set smarttab		" make delete remove X spaces
+"set smartindent	" allow vim to do intelligent indenting
 
 " Syntastic settings
 let g:syntastic_check_on_open=1
@@ -110,7 +116,3 @@ au FileType * setlocal comments=
 "autocmd FileType c set omnifunc=ccomplete#Complete
 "autocmd FileType coffee set omnifunc=coffeecomplete#Complete
 
-" Pathogen
-call pathogen#infect() 
-" enable plugins
-filetype plugin on
