@@ -50,12 +50,17 @@ hi String ctermfg=grey
 " Uncomment the following to have Vim load indentation rules according to the
 " detected filetype. Per default Debian Vim only load filetype specific
 " plugins.
-"if has("autocmd")
-"  filetype indent on
-"endif
+if has("autocmd")
+  filetype indent on
+endif
 
 " Allow indenting to be toggled by pressing F8
 nnoremap <F8> :setl noai! nocin! nosi!
+
+" Allow quick paste toggle
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
 
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
@@ -80,7 +85,7 @@ set shortmess=at	" Avoid the 'press enter' with error messages
 set tabstop=4		" use X spaces when tab is pressed
 set shiftwidth=4  	" shifttabs are also X spaces
 set smarttab		" make delete remove X spaces
-"set smartindent	" allow vim to do intelligent indenting
+set smartindent	" allow vim to do intelligent indenting
 
 " Syntastic settings
 let g:syntastic_check_on_open=1
